@@ -15,9 +15,8 @@ def pytest_addoption(parser):
 
 @pytest.fixture
 def command_line_args(request):
-    args = {}
-    args['browser_name'] = request.config.getoption('--browser_name')
-    args['language'] = request.config.getoption('--language')
+    args = {'browser_name': request.config.getoption('--browser_name'),
+            'language': request.config.getoption('--language')}
     return args
 
 
