@@ -4,11 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6685f4d3-a444-4b16-ad2d-b977016838bc" name="Changes" comment="additing conftest.py" />
+    <list default="true" id="6685f4d3-a444-4b16-ad2d-b977016838bc" name="Changes" comment="adding requirements.txt">
+      <change afterPath="$PROJECT_DIR$/pages/locators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/main_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_main_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main_page.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,9 +39,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/akobets/PycharmProjects/test_page_object"
+    "last_opened_file_path": "C:/Users/akobets/Music/stepik_auto_tests_course-main/autotest"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -121,7 +136,63 @@
       <option name="project" value="LOCAL" />
       <updated>1722775647444</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="additing requirements.txt and test_main_page.py">
+      <option name="closed" value="true" />
+      <created>1722778416320</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722778416320</updated>
+    </task>
+    <task id="LOCAL-00005" summary="creating base_page.py and main_page.py">
+      <option name="closed" value="true" />
+      <created>1722783000442</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722783000442</updated>
+    </task>
+    <task id="LOCAL-00006" summary="additing conftest.py">
+      <option name="closed" value="true" />
+      <created>1722784370357</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722784370357</updated>
+    </task>
+    <task id="LOCAL-00007" summary="additing conftest.py">
+      <option name="closed" value="true" />
+      <created>1722784454855</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722784454855</updated>
+    </task>
+    <task id="LOCAL-00008" summary="adding processing exclusively">
+      <option name="closed" value="true" />
+      <created>1722786943985</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722786943985</updated>
+    </task>
+    <task id="LOCAL-00009" summary="adding conftest.py">
+      <option name="closed" value="true" />
+      <created>1722789037076</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722789037076</updated>
+    </task>
+    <task id="LOCAL-00010" summary="adding requirements.txt">
+      <option name="closed" value="true" />
+      <created>1722789153946</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722789153946</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,7 +219,12 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="additing requirements.txt and test_main_page.py" />
+    <MESSAGE value="creating base_page.py and main_page.py" />
     <MESSAGE value="additing conftest.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="additing conftest.py" />
+    <MESSAGE value="adding processing exclusively" />
+    <MESSAGE value="adding conftest.py" />
+    <MESSAGE value="adding requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding requirements.txt" />
   </component>
 </project>
