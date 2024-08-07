@@ -61,11 +61,11 @@ class BasePage:
         alert.access()
 
     def should_be_login_link(self):
-        assert self.is_element_present(*BasePageLocators.LOGIN_LINK), 'login link is not present'
+        assert self.is_element_present(*BasePageLocators.LOGIN_LINK), 'Login link is not present'
 
     def should_be_authorized_user(self):
-        assert self.is_element_present(*BasePageLocators.USER_ICON), "User icon is not presented," \
-                                                                     " probably unauthorised user"
+        assert self.is_element_present(*BasePageLocators.USER_ICON), \
+            "User icon is not presented,probably unauthorised user"
 
 # Function for passing captcha
     def solve_quiz_and_get_code(self):

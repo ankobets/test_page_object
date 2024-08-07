@@ -1,6 +1,7 @@
 from .base_page import BasePage
 from .locators import ProductPageLocators
 
+
 class ProductPage(BasePage):
 
     def add_to_basket(self):
@@ -20,7 +21,7 @@ class ProductPage(BasePage):
         assert right_price == added_price, 'Wrong price'
 
     def should_not_be_success_message(self):
-        assert self.is_not_element_present(*ProductPageLocators.ADDED_PRODUCT),\
+        assert self.is_not_element_present(*ProductPageLocators.ADDED_PRODUCT), \
             "Success message is presented, but should not be"
 
     def should_disappear_success_message(self):

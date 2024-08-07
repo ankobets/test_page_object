@@ -18,13 +18,14 @@ from .pages.login_page import LoginPage
 #
 # @pytest.mark.parametrize("link", tested_links)
 # def test_guest_can_add_product_to_basket(browser, link):
+@pytest.mark.need_review
 def test_guest_can_add_product_to_basket(browser):
-  # prod_page = ProductPage(browser, link)
-    prod_page = ProductPage(browser, ProductPageLocators.LINK)
+    # prod_page = ProductPage(browser, link)
+    prod_page = ProductPage(browser, ProductPageLocators.LINK_PROMO)
     prod_page.open()
     prod_page.add_to_basket()
-  # prod_page.solve_quiz_and_get_code()
-  # time.sleep(5)
+    prod_page.solve_quiz_and_get_code()
+    time.sleep(5)
     prod_page.check_right_title()
     prod_page.check_right_price()
 
@@ -61,15 +62,28 @@ def test_guest_should_see_login_link_on_product_page(browser):
     prod_page.go_to_login_page()
 
 
+@pytest.mark.need_review
+def test_guest_can_go_to_login_page_from_product_page(browser):
+    product_page = ProductPage(browser, ProductPageLocators.LINK)
+    product_page.open()
+    product_page.go_to_login_page()
+
+    login_url = browser.current_url
+    login_page = LoginPage(browser, login_url)
+    login_page.open()
+    login_page.should_be_login_url(login_url)
+    login_page.should_be_login_form()
+    login_page.should_be_register_form()
+    time.sleep(3)
+
+
+@pytest.mark.need_review
 def test_guest_cant_see_product_in_basket_opened_from_product_page(browser):
     prod_page = ProductPage(browser, ProductPageLocators.LINK)
     prod_page.open()
     prod_page.go_to_basket()
+
     basket_url = browser.current_url
-    guest_see_empty_basket(browser, basket_url)
-
-
-def guest_see_empty_basket(browser, basket_url):
     basket_page = BasketPage(browser, basket_url)
     basket_page.open()
     basket_page.basket_is_empty()
@@ -93,9 +107,12 @@ class TestUserAddToBasketFromProductPage:
         prod_page.open()
         prod_page.should_not_be_success_message()
 
+    @pytest.mark.need_review
     def test_user_can_add_product_to_basket(self, browser):
-        prod_page = ProductPage(browser, ProductPageLocators.LINK)
+        prod_page = ProductPage(browser, ProductPageLocators.LINK_PROMO)
         prod_page.open()
         prod_page.add_to_basket()
+        prod_page.solve_quiz_and_get_code()
+        time.sleep(5)
         prod_page.check_right_title()
         prod_page.check_right_price()
