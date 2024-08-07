@@ -3,9 +3,11 @@ from selenium.webdriver.common.by import By
 class BasePageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, '#login_link_inc')
+    BASKET_LINK = (By.CSS_SELECTOR, 'a[class="btn btn-default"]')
 
 class MainPageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    MAIN_LINK = "http://selenium1py.pythonanywhere.com/"
 
 class LoginPageLocators:
     LOGIN_FORM = (By.ID, 'login_form')
@@ -20,6 +22,9 @@ class ProductPageLocators:
     ADDED_PRICE = (By.CSS_SELECTOR, "div.alert.alert-safe.alert-noicon.alert-info.fade.in > div > p:nth-child(1) > strong")
     LINK = 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/'
 
+class BasketPageLocators:
+    EMPTY_BASKET_MESSAGE = (By.CSS_SELECTOR, 'div #content_inner > p')
+    BASKET_ITEMS = (By.CLASS_NAME, 'basket_summary')
 
 
 
